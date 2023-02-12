@@ -2,8 +2,10 @@ package com.borabesiktepe.rentACar.business.abstracts;
 
 import java.util.List;
 
-import com.borabesiktepe.rentACar.entities.concretes.Brand;
+import com.borabesiktepe.rentACar.business.requests.CreateBrandRequest;
+import com.borabesiktepe.rentACar.business.responses.GetAllBrandsResponse;
 
 public interface BrandService {
-	List<Brand> getAll();
+	List<GetAllBrandsResponse> getAll();
+	void add(CreateBrandRequest createBrandRequest);
 }
